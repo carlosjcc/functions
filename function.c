@@ -10,14 +10,26 @@
 
  #include <stdio.h>
 
+void cough (void);
+
  int main(void)
  {
  	// cough three times
 	for (int i = 0; i < 3; ++i)
 	{
-		printf("cough\n");
+		cough();
+		
 	}
  	
  
  	return 0;
  }
+
+/**
+* Coughs once.
+*/
+
+void cough(void)
+{
+	printf("cough\n");
+}
