@@ -13,9 +13,11 @@
  int main(void)
  {
  	// cough three times
- 	printf("cough\n");
- 	printf("cough\n");
- 	printf("cough\n");
-
+	for (int i = 0; i < 3; ++i)
+	{
+		printf("cough\n");
+	}
+ 	
+ 
  	return 0;
  }
