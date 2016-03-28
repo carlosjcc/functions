@@ -10,26 +10,25 @@
 
  #include <stdio.h>
 
-void cough (void);
+void cough (int n);
 
  int main(void)
  {
  	// cough three times
-	for (int i = 0; i < 3; ++i)
-	{
-		cough();
-		
-	}
- 	
+	
+ 	cough(5);
  
  	return 0;
  }
 
 /**
-* Coughs once.
+* Coughs n times.
 */
-
-void cough(void)
+void cough(int n)
 {
-	printf("cough\n");
+	for (int i = 0; i < n; ++i)
+	{		
+		printf("cough\n");		
+	}
+	
 }
